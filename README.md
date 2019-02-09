@@ -35,4 +35,4 @@ Errors can also be returned as an object like this:
 
 If `ok` evaluates to true, the page is redirected to the `redirect` url. If no redirect url is returned from the server, the page simply reloads. If `ok` evaluates to false, the error messages are displayed next to the appropriate form fields using Bootstrap 4 classes.
 
-If `message` is not empty, it will be displayed in a popup. This is for generic errors that don't correlate to any field. The popup will be displayed with bootbox or sweetalert or if neither of those are available it will fallback to a standard alert box.
+If `message` is not empty, it will be displayed in a popup. This is for generic errors that don't correlate to any field. The popup will be displayed with [bootbox](http://bootboxjs.com/) or [sweetalert](https://sweetalert.js.org/) or if neither of those are available it will fallback to a standard alert box.
