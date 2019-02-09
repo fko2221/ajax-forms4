@@ -4,7 +4,7 @@ Dependencies
 - Bootstrap 4
 - JQuery
 
-Forms that have data-submit="ajax" are converted to AJAX forms. When a form is submitted the form data is submitted via AJAX. 
+Forms that have a `data-submit="ajax"` attribute are converted to AJAX forms. When a form is submitted the form data is submitted via AJAX. 
 The server should respond with a JSON object with the following structure:
  
 ```sh
@@ -33,6 +33,6 @@ Errors can also be returned as an object like this:
 }
 ```
 
-If ok evaluates to true, the page is redirected to the redirect url. If no redirect url is returned from the server, the page simply reloads. If ok evaluates to false, the error messages are displayed next to the appropriate form fields.
+If `ok` evaluates to true, the page is redirected to the `redirect` url. If no redirect url is returned from the server, the page simply reloads. If `ok` evaluates to false, the error messages are displayed next to the appropriate form fields.
 
-If message is not empty, it will be displayed in a popup. This is for generic errors that don't correlate to any field. The popup will be displayed with bootbox or sweetalert or if neither of those are available it will fallback to a standard alert box.
+If `message` is not empty, it will be displayed in a popup. This is for generic errors that don't correlate to any field. The popup will be displayed with bootbox or sweetalert or if neither of those are available it will fallback to a standard alert box.
